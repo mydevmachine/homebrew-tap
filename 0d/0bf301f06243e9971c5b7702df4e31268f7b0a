@@ -1,0 +1,14 @@
+session-share.rb
+  h_0e71f0b33c1b87 8,15-16,23-24,34-35,41-42
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "0d0bf301f06243e9971c5b7702df4e31268f7b0a",
+  "prompts": {},
+  "humans": {
+    "h_0e71f0b33c1b87": {
+      "author": "Djalma Araujo <djalma@nossomos.cc>"
+    }
+  }
+}
