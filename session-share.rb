@@ -5,23 +5,23 @@
 class SessionShare < Formula
   desc "Share a running tmux session for a limited time, in a browser or over SSH"
   homepage "https://github.com/mydevmachine/session-share"
-  version "0.1.4"
+  version "0.1.6"
   license "MIT"
 
   depends_on "tmux"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mydevmachine/session-share/releases/download/v0.1.4/session-share_darwin_amd64.tar.gz"
-      sha256 "1cb506e0265ae97653860a489a1ad0a15986a861e76682abb5e93283a7a40d4c"
+      url "https://github.com/mydevmachine/session-share/releases/download/v0.1.6/session-share_darwin_amd64.tar.gz"
+      sha256 "1d9b698cf5a5f029f2c2a57f2a166fce064fe7cd74fb0bbc0cdbecce1865d03c"
 
       define_method(:install) do
         bin.install "session-share"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mydevmachine/session-share/releases/download/v0.1.4/session-share_darwin_arm64.tar.gz"
-      sha256 "de58a0607477b88e0eb8e6acab14185a171f9011ad0c11249f95c8295e76c8e3"
+      url "https://github.com/mydevmachine/session-share/releases/download/v0.1.6/session-share_darwin_arm64.tar.gz"
+      sha256 "c30d7dcbcda0213e333aa1cf6bc2c4ac58c2181e07ea10551e43de44594001d6"
 
       define_method(:install) do
         bin.install "session-share"
@@ -31,15 +31,15 @@ class SessionShare < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mydevmachine/session-share/releases/download/v0.1.4/session-share_linux_amd64.tar.gz"
-      sha256 "06c89b0caaa8c91523d5f10fe442490f3d07579fac4bb195c0edd7062c2dbf8f"
+      url "https://github.com/mydevmachine/session-share/releases/download/v0.1.6/session-share_linux_amd64.tar.gz"
+      sha256 "1243c0fbe3a81ac4ac41181e62e4552848c777badf5c92924f8666d9d369b746"
       define_method(:install) do
         bin.install "session-share"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mydevmachine/session-share/releases/download/v0.1.4/session-share_linux_arm64.tar.gz"
-      sha256 "0574dd9b353a0e2b87f0964dc554d2310bcc55be110f7b93c2e38b276bc8ee49"
+      url "https://github.com/mydevmachine/session-share/releases/download/v0.1.6/session-share_linux_arm64.tar.gz"
+      sha256 "ddf622f519e0f57073f09415373393bf67af9985a549239c9010be0af67ceabd"
       define_method(:install) do
         bin.install "session-share"
       end
