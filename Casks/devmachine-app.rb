@@ -1,6 +1,6 @@
 cask "devmachine-app" do
-  version "0.7.0"
-  sha256 "1f9c2eb2b9733335c4f50b6fdcfdddcefe80d90b131f6897667107911a6f75cd"
+  version "0.7.3"
+  sha256 "665e241ad90da6222f1af19d74bf6dc4301f06416196803e8421f665be019167"
 
   url "https://github.com/mydevmachine/app-releases/releases/download/v#{version}/Devmachine-#{version}.dmg"
   name "Devmachine"
