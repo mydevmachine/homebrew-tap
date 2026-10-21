@@ -5,13 +5,13 @@
 class Devmachine < Formula
   desc "Turn a VPS into workspaces you develop in"
   homepage "https://mydevmachine.sh/"
-  version "0.17.0"
+  version "0.17.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mydevmachine/devmachine/releases/download/v0.17.0/devmachine_0.17.0_darwin_amd64.tar.gz"
-      sha256 "2929752590ccb04f7d5e4e2b86e4fbc9319fff752d7ee321035ac23d3fa985c4"
+      url "https://github.com/mydevmachine/devmachine/releases/download/v0.17.1/devmachine_0.17.1_darwin_amd64.tar.gz"
+      sha256 "0330584bd8770eb1b8caa1a46c1656780ef858337c7881063af204b93c72b4d1"
 
       define_method(:install) do
         bin.install "devmachine"
@@ -19,8 +19,8 @@ class Devmachine < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mydevmachine/devmachine/releases/download/v0.17.0/devmachine_0.17.0_darwin_arm64.tar.gz"
-      sha256 "59eac312c17bf14c303085b11e192da3cfbba0f67990ac3448e348ddbba646a1"
+      url "https://github.com/mydevmachine/devmachine/releases/download/v0.17.1/devmachine_0.17.1_darwin_arm64.tar.gz"
+      sha256 "c82b4f35846fba7a12917aed78f62332eb0e6b2ea338f73e389ba16401102bd5"
 
       define_method(:install) do
         bin.install "devmachine"
@@ -31,16 +31,16 @@ class Devmachine < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mydevmachine/devmachine/releases/download/v0.17.0/devmachine_0.17.0_linux_amd64.tar.gz"
-      sha256 "1b87bbd022d9ae91eb5a0ddbc597729a0b5cff37c33fdef65b006f38686c1f5f"
+      url "https://github.com/mydevmachine/devmachine/releases/download/v0.17.1/devmachine_0.17.1_linux_amd64.tar.gz"
+      sha256 "acd352617876ab57776e84b845ddcf68ade93d81ec4f67a2d17f4698d45a652f"
       define_method(:install) do
         bin.install "devmachine"
         bin.install_symlink bin/"devmachine" => "advm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mydevmachine/devmachine/releases/download/v0.17.0/devmachine_0.17.0_linux_arm64.tar.gz"
-      sha256 "3b2c32de7ae8ae1a7e45164aeb3edf22956ae17ea43ba49910206f13dd38bc90"
+      url "https://github.com/mydevmachine/devmachine/releases/download/v0.17.1/devmachine_0.17.1_linux_arm64.tar.gz"
+      sha256 "57d9f3eae8fb8450aa2360b233fc02cceffce6f5295d57adee966cc5628fc3e1"
       define_method(:install) do
         bin.install "devmachine"
         bin.install_symlink bin/"devmachine" => "advm"
